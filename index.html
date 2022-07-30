@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/estilos.css">
+    <title>HS Desarrolador Web</title>
+</head>
+<body>
+    <!-- SECCION 1 -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                  <img src="/imagenes/APLogo-20-20.png" alt="argentinaprograma" height="55px">
+                  <nav id="nav" class=""> 
+                    <ul id="links">
+                      <li><a href="#inicio" class="seleccionado" onclick="selecionar(this)">INICIO</a></li>
+                      <li><a href="#acercade" onclick="selecionar(this)">ACERCA DE</a></li>
+                      <li><a href="#educacion" onclick="selecionar(this)">EDUCACION</a></li>
+                      <li><a href="#proyectos" onclick="selecionar(this)">PROYECTOS</a></li>
+                      <li><a href="#contacto" onclick="selecionar(this)">CONTACTO</a></li>
+                    </ul> 
+                  </nav>
+                  
+                  <div id="icono-nav" onclick="responsiveMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                  </div>
+
+                  <div class="redes">
+                    <a href="https://www.facebook.com/people/Hernan-Segura/100083415308576/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/jere.segura/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/hern%C3%A1n-jerem%C3%ADas-segura-bb20b0242" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                  </div>
+                </div>
+            </header>
+            <div class="presentacion">
+               <p class="bienvenida">#HOLAMUNDO</p>
+               <h2><span>Hernán Segura</span>, Desarollador Web</h2>
+            </div>
+        </div>
+    </section>
+
+    <!--SECCION 2 -->
+    <section id="acercade">
+      <div class="contenedor-foto">
+        <img src="/imagenes/HernanSegura.jpg" alt="HernanSegura">
+      </div>
+      <div class="acercade">
+        <p class="titulo-seccion">Acerca De</p>
+        <h2>Hola, soy <span>Hernán Segura</span></h2>
+        <h3>Desarollador Web -Full Stack- JR.</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus accusamus quibusdam nam modi libero praesentium iste amet debitis odio sapiente</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit praesentium laborum quam, numquam rem harum, aspernatur voluptate quia ea</p>
+      </div>
+    </section>
+
+    <!--SECCION 3 -->
+    <section id="educacion">
+       <h3 class="titulo-seccion">EDUCACION</h3>
+       <div class="fila">
+         <div class="educacion">
+           <span class="icono"><img src="/imagenes/logo-mobile-test-06.png" alt="uniaconcaga" height="80px"></span>
+            <h4>Curso de Seguridad Privada/REPRIV</h4>
+            <hr>
+            <ul class="educacio-tag">
+              <li>Vigilador Privado</li>
+              <li>Vigilador de Diversion Nocturna</li>
+              <li>Vigilador Gral.</li>
+            </ul>
+            <p>Curso básico de capacitacion para personal de vigilancia, vigiladores de seguridad privada y de diversión nocturna.</p>
+          </div>
+          <div class="educacion">
+            <span class="icono"><img src="/imagenes/APLogo-20-20.png" alt="argentinaprograma" height="80px"></span>
+             <h4>Curso de Diseñador Web Full Stack JR.</h4>
+             <hr>
+             <ul class="educacio-tag">
+               <li>Front-End</li>
+               <li>Back-End</li>
+               <li>Base de Datos</li>
+             </ul>
+             <p>Curso básico de capacitacion para personal de vigilancia, vigiladores de seguridad privada y de diversión nocturna.</p>
+           </div>
+           <div class="educacion">
+            <span class="icono"><img src="/imagenes/APLogo-20-20.png" alt="argentinaprograma" height="80px"></span>
+             <h4>Curso de Ingles para Programadores</h4>
+             <hr>
+             <ul class="educacio-tag">
+               <li></li>
+               <li></li>
+               <li></li>
+             </ul>
+             <p>Curso básico de capacitacion para personal de vigilancia, vigiladores de seguridad privada y de diversión nocturna.</p>
+           </div>
+       </div>
+    </section>
+
+    <!--SECCION 4 -->
+    <div class="contenedor-skills" id="skills">
+         <h3>Hard Skills & Soft Skills</h3>
+         <div class="skill">
+            <div class="info">
+              <p><span class="lista">Adaptacion & Aprendizaje</span></p>
+              <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+              <div id="adaptacion" class=""></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="info">
+              <p><span class="lista">Trabajo en Equipo</span></p>
+              <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+              <div id="trabajo" class=""></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="info">
+              <p><span class="lista">Resolucion de problemas</span></p>
+              <span class="porcentaje">95%</span>
+            </div>
+            <div class="barra">
+              <div id="resolucion" class=""></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="info">
+              <p><span class="lista">Html & Css</span></p>
+              <span class="porcentaje">50%</span>
+            </div>
+            <div class="barra">
+              <div id="html" class=""></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="info">
+              <p><span class="lista">Javascript</span></p>
+              <span class="porcentaje">25%</span>
+            </div>
+            <div class="barra">
+              <div id="js" class=""></div>
+            </div>
+          </div>
+
+          <div class="skill">
+            <div class="info">
+              <p><span class="lista">Base de Datos</span></p>
+              <span class="porcentaje">25%</span>
+            </div>
+            <div class="barra">
+              <div id="bd" class=""></div>
+            </div>
+          </div>
+    </div>
+    
+    <!--SECCION 5 -->
+    <section id="proyectos">
+      <div class="proyectos">
+        <p class="titulo-seccion">Mis Proyectos</p>
+        <h2>Portfolio completo responsive</h2>
+        <h3>Pagina personal para portfolio, creada con Html, Css y Javasript</h3>
+        <p>Aplicando lo aprendido en el curso de "Argentina Programa".</p>
+      </div>
+      <div class="contenedor-foto">
+        <img src="/imagenes/A-man-who-writes-code.jpg" alt="mancode">
+      </div>
+    </section>
+
+    <!--SECCION 6 -->
+    <section id="contacto">
+       <h3 class="titulo-seccion">Contacto</h3>
+       <div class="contenedor-form">
+         <form action="">
+            <div class="fila mitad">
+               <input type="text" placeholder="Nombre Completo" class="input-mitad">
+               <input type="text" placeholder="Direccion de Email" class="input-mitad">
+            </div>
+            <div class="fila">
+              <input type="text" placeholder="Tema..." class="input-full">
+            </div>
+            <div class="fila">
+              <textarea name="" id="" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+            </div>
+
+            <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+
+         </form>
+       </div>
+    </section>
+     
+    <!--SECCION 7 -->
+    <footer>
+      <p>Todos los derechos reservados - 2022</p>
+      <div class="redes">
+        <a href="https://www.facebook.com/people/Hernan-Segura/100083415308576/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.instagram.com/jere.segura/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/hern%C3%A1n-jerem%C3%ADas-segura-bb20b0242" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      </div>
+    </footer>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>

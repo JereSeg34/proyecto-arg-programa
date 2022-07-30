@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Monserrat';
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#inicio {
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("imagenes/inicio.jpeg");
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+#inicio .contenido header {
+    background-color: rgba(0,0,0,.7);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0;
+}
+#inicio .contenido header .contenido-header {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+#inicio .contenido header .contenido-header h1 {
+    text-align: center;
+    color:red;
+}
+#inicio .contenido header .contenido-header nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center; 
+}
+#inicio .contenido header .contenido-header nav ul li a {
+    text-decoration: none;
+    color: rgb(247, 241, 241);
+    margin: 0 12px;
+    font-weight: 400;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header nav ul a:hover{
+    color: red;
+}
+#inicio .contenido header .contenido-header .redes a{
+    text-decoration: none;
+    color: rgb(247, 243, 243);
+    display: inline-block;
+    margin-left: 10px;
+    transition: .5s;
+}
+#inicio .contenido header .contenido-header .redes a:hover{
+    color:red;
+}
+#inicio .contenido header .contenido-header .seleccionado{
+    color: red;
+}
+
+#inicio .contenido .presentacion{
+    max-width: 1100px;
+    height: 100vh;
+    margin: auto;
+    color: rgb(247, 243, 243);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#inicio .contenido .presentacion .bienvenida{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+#inicio .contenido .presentacion h2{
+    font-size: 55px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+#inicio .contenido .presentacion h2 span{
+    font-size: 60px;
+    color: red ;
+} 
+#icono-nav{
+    color: rgb(247, 243, 243);
+    display: none;
+}
+#acercade {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+#acercade .contenedor-foto{
+    max-width: 350px;
+    margin-right: 80px;
+}
+#acercade .contenedor-foto img{
+    padding: 15px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #c0bbbb;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+#acercade .acercade{
+    margin: 0 40px;
+}
+#acercade .acercade .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #858383;
+    text-decoration-thickness: 5px;
+    -moz-text-decoration-color: #858383;
+}
+#acercade .acercade h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+#acercade .acercade h2 span{
+    color: red;
+}
+#acercade .acercade h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+#acercade .acercade p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+#educacion{
+    padding: 100px 15px;
+    text-align: center;
+    background-color: #dddcdc;
+}
+#educacion .titulo-seccion{
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #727070;
+    text-decoration-thickness: 5px;
+    -moz-text-decoration-color: #727070;
+}
+#educacion .fila{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 30px auto;
+}
+#educacion .fila .educacion{
+    max-width: 350px;
+    background-color: #c0bbbb;
+    padding: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    transition: .5s;
+}
+#educacion .fila .educacion:hover{
+    box-shadow: 5px 5px 10px #565656, -5px -5px 10px #8a8a8a;
+}
+#educacion .fila .educacion h4{
+    font-size: 20px;
+    margin-bottom: 25px;
+}
+#educacion .fila .educacion hr {
+    width: 30%;
+    margin: auto;
+    color: rgb(26, 1, 1);
+    margin-bottom: 25px;
+}
+#educacion .fila .educacion ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+#educacion .fila .educacion p{
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.contenedor-skills{
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url("imagenes/habilidades.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+    text-align: center;
+}
+.contenedor-skills .skill {
+    max-width: 600px;
+    margin: 30px auto; 
+}
+.contenedor-skills .skill .info {
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor-skills .skill .barra{
+    background-color: #919191;
+    width: 100%;
+    height: 6px;
+    margin: 10px 0;
+}
+.contenedor-skills .skill .barra .barra-progreso1{
+    background-color: #fff;
+    width: 95%;
+    height: 6px;
+    animation: progreso1 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso2{
+    background-color: #fff;
+    width: 95%;
+    height: 6px;
+    animation: progreso2 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso3{
+    background-color: #fff;
+    width: 50%;
+    height: 6px;
+    animation: progreso3 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso4{
+    background-color: #fff;
+    width: 25%;
+    height: 6px;
+    animation: progreso4 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso5{
+    background-color: #fff;
+    width: 25%;
+    height: 6px;
+    animation: progreso5 2s forwards;
+}
+.contenedor-skills .skill .barra .barra-progreso6{
+    background-color: #fff;
+    width: 25%;
+    height: 6px;
+    animation: progreso5 2s forwards;
+}
+@keyframes progreso1{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes progreso2{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 95%;
+    }
+}
+@keyframes progreso3{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+@keyframes progreso4{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 25%;
+    }
+}
+@keyframes progreso5{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 25%;
+    }
+}
+#proyectos {
+    max-width: 1100px;
+    margin: auto;
+    padding: 100px 15px;
+    color: #111135;
+    display: flex;
+}
+#proyectos .contenedor-foto{
+    max-width: 350px;
+    margin-right: 80px;
+}
+#proyectos .contenedor-foto img{
+    padding: 15px;
+    width: 80%;
+    border-radius: 10px;
+    background-color: #c0bbbb;
+}
+#proyectos .proyectos{
+    margin: 0 40px;
+}
+#proyectos .proyectos .titulo-seccion{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #858383;
+    text-decoration-thickness: 5px;
+}
+#proyectos .proyectos h2{
+    font-size: 34px;
+    font-weight: bold;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+
+#proyectos .proyectos h3{
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+#proyectos .proyectos p{
+    font-size: 14px;
+    line-height: 25px;
+    color: #565656;
+    margin-bottom: 12px;
+}
+#contacto{
+    padding: 100px 15px;
+}
+#contacto .titulo-seccion{
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    text-transform: uppercase;
+    color: #111135;
+    text-decoration: underline;
+    text-decoration-color: #858383;
+    text-decoration-thickness: 5px;
+}
+#contacto .contenedor-form{
+    max-width: 1100px;
+    margin: auto;
+}
+#contacto .contenedor-form .fila{
+    margin-bottom: 15px;
+}
+#contacto .contenedor-form .mitad{
+    display: flex;
+    justify-content: space-between;
+}
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea{
+    padding: 20px;
+    border-radius: 20px;
+    border: none;
+    border: 1px solid #919191;
+}
+#contacto .contenedor-form .mitad input{
+    width: 48%;
+}
+#contacto .contenedor-form .input-full{
+    width: 100%;
+}
+#contacto .btn-enviar{
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    transition: .5s;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+}
+#contacto .btn-enviar:hover{
+    background-color: red;
+    color: #fff;
+}
+footer{
+    background-color: rgba(0,0,0,.7);
+    color:#fff;
+    text-align: center;
+    padding: 30px 0;
+}
+footer a{
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 5px;
+    font-size: 26px;
+}
+
+/*RESPONSIVE*/
+@media screen and (max-width:858px){
+    .redes{
+        display: none;    
+    }
+    nav {
+        display: none;
+    }
+    nav.responsive {
+        display: block;
+        background-color: rgba(0, 0, 0, .7);
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        padding: 10px 0;
+    }
+    nav.responsive ul {
+        display: block;
+        text-align: center;  
+    }
+    nav.responsive ul li {
+        margin: 5px 0;
+    }
+    #icono-nav {
+        display: block;
+    }
+    #inicio .contenido .presentacion h2{
+        font-size: 40px;
+    }
+    #acercade {
+        padding: 50px 0;
+        display: block;
+    }
+
+    #acercade .contenedor-foto{
+        max-width: 200px;
+        margin: auto;
+    }
+    #acercade .contenedor-foto img {
+        padding: 8px;
+    }
+
+    #acercade .acercade .titulo-seccion {
+        text-align: center;
+    }
+
+    #acercade .acercade h2 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    #educacion {
+        padding: 50px 15px;
+    }
+    #educacion .fila {
+        display: block;
+    }
+
+    #educacion .fila .educacion {
+        margin: 10px auto;
+    }
+
+    .contenedor-skills {
+        padding: 50px 20px;
+    }
+
+    #proyectos {
+        padding: 50px 0;
+    }
+    
+    #contacto {
+        padding: 50px 15px;
+    }
+
+    #contacto .contenedor-form .mitad {
+        margin-bottom: 15px;
+        display: block;
+    }
+
+    #contacto .contenedor-form .mitad input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+
+
+    
+}
