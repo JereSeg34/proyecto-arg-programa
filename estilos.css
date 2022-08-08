@@ -1,17 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Montserrat:wght@200;400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family:'Monserrat';
 }
-
 html {
     scroll-behavior: smooth;
 }
 
 #inicio {
-    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("imagenes/inicio.jpeg");
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url("imagenes/nicolas-prieto-hDEMSsPbXF4-unsplash.jpg");
     background-size: cover;
     background-position: center center;
     height: 100vh;
@@ -63,7 +62,6 @@ html {
 #inicio .contenido header .contenido-header .seleccionado{
     color: red;
 }
-
 #inicio .contenido .presentacion{
     max-width: 1100px;
     height: 100vh;
@@ -93,6 +91,7 @@ html {
     color: rgb(247, 243, 243);
     display: none;
 }
+
 #acercade {
     max-width: 1100px;
     margin: auto;
@@ -127,7 +126,7 @@ html {
     -moz-text-decoration-color: #858383;
 }
 #acercade .acercade h2{
-    font-size: 34px;
+    font-size: 35px;
     font-weight: bold;
     margin: 20px 0;
     letter-spacing: 2px;
@@ -136,18 +135,19 @@ html {
     color: red;
 }
 #acercade .acercade h3{
-    font-size: 18px;
+    font-size: 25px;
     font-weight: 500;
     text-transform: uppercase;
     margin-bottom: 20px;
     letter-spacing: 1px;
 }
 #acercade .acercade p{
-    font-size: 14px;
+    font-size: 20px;
     line-height: 25px;
     color: #565656;
     margin-bottom: 12px;
 }
+
 #educacion{
     padding: 100px 15px;
     text-align: center;
@@ -213,7 +213,6 @@ html {
     max-width: 600px;
     margin: 30px auto; 
 }
-
 .contenedor-skills h3{
     color: #fff;
 }
@@ -224,73 +223,36 @@ html {
 }
 
 #proyectos {
-    max-width: 1100px;
-    margin: auto;
     padding: 100px 15px;
-    color: #111135;
-    display: flex;
-}
-#proyectos .contenedor-foto{
-    max-width: 350px;
-    margin-right: 80px;
-}
-#proyectos .contenedor-foto img{
-    padding: 15px;
-    width: 80%;
-    border-radius: 10px;
-    background-color: #c0bbbb;
-}
-#proyectos .proyectos{
-    margin: 0 40px;
-}
-#proyectos .proyectos .titulo-seccion{
-    margin-bottom: 20px;
     text-align: center;
+}
+#proyectos .titulo-seccion {
     font-size: 22px;
     text-transform: uppercase;
     color: #111135;
     text-decoration: underline;
-    text-decoration-color: #858383;
+    text-decoration-color: #727070;
     text-decoration-thickness: 5px;
-}
-#proyectos .proyectos h2{
-    font-size: 34px;
-    font-weight: bold;
-    margin: 20px 0;
-    letter-spacing: 2px;
+    -moz-text-decoration-color: #727070;
 }
 
-#proyectos .proyectos h3{
-    font-size: 18px;
-    font-weight: 500;
-    text-transform: uppercase;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-}
-#proyectos .proyectos p{
-    font-size: 14px;
-    line-height: 25px;
-    color: #565656;
-    margin-bottom: 12px;
-}
-#contacto{
+#contacto {
     padding: 100px 15px;
 }
 #contacto .titulo-seccion{
-    margin-bottom: 20px;
-    text-align: center;
     font-size: 22px;
     text-transform: uppercase;
+    text-align: center;
     color: #111135;
     text-decoration: underline;
-    text-decoration-color: #858383;
+    text-decoration-color: #727070;
     text-decoration-thickness: 5px;
+    -moz-text-decoration-color: #727070;
 }
 #contacto .contenedor-form{
     max-width: 1100px;
     margin: auto;
 }
-
 #contacto .btn-enviar{
     display: block;
     margin: auto;
@@ -304,6 +266,7 @@ html {
     background-color: red;
     color: #fff;
 }
+
 footer{
     background-color: rgba(0,0,0,.7);
     color:#fff;
@@ -341,6 +304,7 @@ footer a{
     }
     nav.responsive ul li {
         margin: 5px 0;
+        text-align: center;
     }
     #icono-nav {
         display: block;
@@ -367,6 +331,15 @@ footer a{
 
     #acercade .acercade h2 {
         font-size: 25px;
+        text-align: center;
+    }
+
+    #acercade .acercade h3{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #acercade .acercade p{
         text-align: center;
     }
 
